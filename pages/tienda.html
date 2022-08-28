@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="frase E-commerce">
+
+    <meta name="keywords" content="CEO PONER">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/3756f86c62.js" crossorigin="anonymous"></script>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../img/logotech.png" type="image/x-icon">
+    <!-- Css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>SerTechnology | Tienda</title>
+</head>
+<body>
+    <!-- Encabezado -->
+    <div class="contenedorGeneral">
+        <header class="header">
+            <div class="logoHeader">
+                <a href="../index.html"><img src="../img/logosolo.png" alt="Logo de la pagina"></a>
+            </div>
+            <!-- <div>
+                <button class="switch" id="dark">
+                    <span><i class="fas fa-sun"></i></span>
+                    <span><i class="fas fa-moon"></i></span>
+                </button>
+            </div> -->
+
+            <ul>
+                <li class="submenu">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div id="carrito">
+                        <table id="lista-carrito" class="u-full-width">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th>Cantidad</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                        <a href="#" id="comprar-carrito" class="buy-card u-full-width">Comprar</a>
+                        <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                    </div>
+                </li>
+            </ul>
+    
+            <nav class="navMenu">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="menuIcon"><img src="../img/iconmenu.jpg" alt="Menu"></i>
+                </label>
+            <ul>
+                <li><a href="./sobre_mi.html">Sobre nosotros</a></li>
+                <li><a href="../index.html#serv">Servicios</a></li>
+                <li><a href="./tienda.html" id="inpage">Tienda</a></li>
+                <li><a href="#" target="_blank">Contacto</a></li>
+            </ul> 
+        </nav>
+    </header>
+    <!-- Contenido -->
+    <main>
+        <a href="#" class="btn-wsp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <h1 class="title">TIENDA<i class="fa-solid fa-cart-shopping carrito-tienda"></i></h1>
+        <h2 class="h2Tienda">¡ACCEDE A NUESTROS PRODUCTOS CON DESCUENTOS EXCLUSIVOS!</h2>
+        <div class="buy" id="buy">
+            <div class="item1" id="item">
+                <img src="../img/iphone13.jpg" alt="" width="400">
+                <h2 class="guiaTitle">IPHONE 13 PRO MAX</h2>
+                <!-- <p>128GB hasta 1TB de memoria.</p> -->
+                <p>$1500,00</p>
+                <a href="#" class="boton agregar-carrito" data-id="1">Agregar al Carrito</a><br><br>
+                <a class="oferta">OFERTA!</a>
+            </div>
+            <div class="item2" id="item">
+                <img src="../img/monitor.webp" alt="" width="290">
+                <h2 class="guiaTitle">Monitor Benq</h2>
+                <!-- <p>Bl2420pt 2k 23,8'' Cad/cam Ips Black</p> -->
+                <p>$2000,00</p>
+                <a href="#" class="boton agregar-carrito" data-id="2">Agregar al Carrito</a><br><br>
+                <a class="oferta">OFERTA!</a>
+            </div>
+            <div class="item3" id="item">
+                <img src="../img/xbox.jpg" alt="" width="375">
+                <h2 class="guiaTitle">Joystick XBOX 360</h2>
+                <p>$90,00</p>
+                <a class="boton agregar-carrito" id="agregar-carrito" href="#" data-id="3">Agregar al Carrito</a><br><br>
+                <a class="oferta">OFERTA!</a>
+            </div>
+            <p class="h2Tienda">Una vez finalizada la compra y acreditado tu pago te estará llegando un mail con un enlace de seguimiento. <i class="fa-solid fa-box-open"></i></p>
+        </div>
+        <div class="buttom-cargar">
+            <a href="#" class="botonTienda bottom-tienda">CARGAR MAS PRODUCTOS</a>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+        </div>
+
+        <h2 class="subtitle">Consultas | Información <i class="fa-solid fa-message"></i></h1>
+        <h3 class="h2Tienda">¡Aclaranos tus dudas y te asesoramos!</h3>
+        <section class="fyq">
+        <div class="faq-content">
+            <div class="faq-container first">
+                <div class="faq-collaps">
+                    <h3 class="pregunta">¿Cuáles son los metodos de pago?</h3>
+                    <div class="arrow-container">
+                        <p class="line"></p>
+                        <p class="line"></p> 
+                    </div>
+                </div>
+                <div class="faq-answer">
+                    <p>Se puede abonar Efectivo | Tarjeta de crédito | Tarjeta de débito | Transferencia o Depósito bancario.
+                    </p>
+                    <p>El pago del mismo se realizará en moneda local o dependiendo del país en el que estés.</p>
+                </div>
+            </div>
+            <div class="faq-container">
+                <div class="faq-collaps">
+                    <h3 class="pregunta">¿Tienen garantía los productos?</h3>
+                    <div class="arrow-container">
+                        <p class="line"></p>
+                        <p class="line"></p>
+                    </div>
+                </div>
+                <div class="faq-answer">
+                    <p>Todas los productos tienen garantía de un año.
+                    </p>
+                    <p>Siempre y cuando cumpla con las reglas del producto Empaque | Ticket | Funcionalidad.</p>
+                </div>
+            </div><div class="faq-container">
+                <div class="faq-collaps">
+                    <h3 class="pregunta">Consultas a través de nuestro Contacto.</h3>
+                    <div class="arrow-container">
+                        <p class="line"></p>
+                        <p class="line"></p>
+                    </div>
+                </div>
+                <div class="faq-answer">
+                    <p>Al comunicarte con nosotros te daremos una atención especializada y asesoramiento en el producto que elijas!
+                    </p>
+                </div>
+            </div>
+        </div>
+        </section>
+        
+    </main>
+        <!-- Pie de pagina -->
+        <footer class="footer">
+            <div class="footerContainer">
+                <div class="footerContenido">
+                    <img src="../img/logotech.png" alt="" width="100">
+                    <p class="footerInfo">+54 1124068870</p>
+                    <p class="footerInfo">SerTechnology@E-commerce.com</p>
+                </div>
+                <div class="footerMenu">
+                    <div class="footerContenido">
+                        <p class="menuTitulo">Menu</p>
+                        <a href="./sobre_mi.html" class="menuItemFooter">Sobre nosotros</a>
+                        <a href="../index.html#serv" class="menuItemFooter">Servicios</a>
+                        <a href="./tienda.html" class="menuItemFooter">Tienda</a>
+                        <a href="#" target="_blank" class="menuItemFooter">Contacto</a>
+
+                    </div>                    
+                    <div class="footerContenido">
+                        <p class="menuTitulo">Legal</p>
+                        <a href="#" class="menuItemFooter">Privacidad</a>
+                        <a href="#" class="menuItemFooter">Cookies</a>
+                        <a href="#" class="menuItemFooter">Terminos y Condiciones</a>
+                    </div>
+                </div>
+    
+                <div class="footerContenido">
+                <p class="menuTitulo">Redes Sociales</p>
+                    <div class="socialContainer">
+                        <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyContainer">
+                <p class="copyright">&copy;2022, SerTechnology</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/darkmode.js"></script>i
+
+</body>
+</html>
