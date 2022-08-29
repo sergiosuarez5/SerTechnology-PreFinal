@@ -185,11 +185,15 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
   font-size: 30px;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
-  z-index: 100; }
+  z-index: 100; 
+  transition: all 0.5s;
+}
   .btn-wsp:hover {
     text-decoration: none;
     color: #267c7b;
-    background-color: #fff; }
+    background-color: #fff; 
+    transform: translateY(10px);
+  }
 
 #inpage {
   color: #fff; }
@@ -209,27 +213,45 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center; }
-    .wrap .wrap-texto h1 {
+    .wrap-texto img {
+      transition: all 0.5s;
+    }
+    .wrap-texto img:hover{
+      transform: translateY(-5px);
+    }
+    .wrap .wrap-texto h2 {
       font-family: 'Montserrat', sans-serif;
-      font-size: 6rem;
+      font-size: 3rem;
       color: #fff; }
     .wrap .wrap-texto .buttom {
       background-color: #2bc9c6;
-      padding: 6px;
+      padding: 10px;
       margin-top: .5rem;
-      border-radius: 1.4rem;
+      border-radius: 1.0rem;
       text-align: center;
       text-decoration: none;
-      color: #fff; }
+      color: #fff; 
+      box-shadow: 0 12px 16px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s;
+    }
       .wrap .wrap-texto .buttom:hover {
-        background-color: #267c7b; }
+        background-color: #267c7b; 
+        transform: translateY(10px);
+        box-shadow: 0 12px 16px rgba(255, 255, 255, 0.2);
+      }
         .wrap .wrap-texto .textJs {
+          text-align: center;
           color: white;
         }
 
   .flecha{
     padding: 10px;
+    transition: all 0.5s;
   }
+  .flecha:hover {
+    transform: translateY(-5px);
+  }
+
 
 /* GLOBAL PARA SUBTITULOS */
 /* BOTONES */
@@ -417,7 +439,6 @@ main {
     color: #fff;
     background-color: #2bc9c6;
     text-decoration: none;
-    padding: 10px;
     border-radius: 10px;
   }
     .botonTienda a {
@@ -816,7 +837,7 @@ input[type="radio"]:checked + label {
       min-width: 40vw;
       margin-bottom: 2rem; }
     .about .imgAbout, .formacion .imgAbout {
-      width: 35vw; }
+      width: 50vw; }
   .buy {
     display: flex;
     flex-direction: column;
@@ -873,7 +894,40 @@ input[type="radio"]:checked + label {
     text-align: center;
     font-size: 5rem; }
   main, .aboutDer p {
-    width: 100vw; }
+    width: 100vw;
+    font-size: 20px;
+  }
+  .h2Tienda {
+    font-size: 1.0em;
+    padding: 10px;
+  }
+  .title {
+    font-size: 1.8em;
+  }
+  .wrap .img-mainfo {
+    width: 100px;
+  }
+  .wrap .wrap-texto h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: #fff; }
+    .wrap .wrap-texto .buttom {
+      background-color: #2bc9c6;
+      padding: 10px;
+      font-size: 15px;;
+      margin-top: .5rem;
+      border-radius: 0.5rem;
+      text-align: center;
+      text-decoration: none;
+      color: #fff; 
+      box-shadow: 0 12px 16px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s;
+    }
+      .wrap .wrap-texto .buttom:hover {
+        background-color: #267c7b; 
+        transform: translateY(10px);
+        box-shadow: 0 12px 16px rgba(255, 255, 255, 0.2);
+      }
   .about .aboutDer {
     margin: 0;
     width: 100vw; }
@@ -884,15 +938,20 @@ input[type="radio"]:checked + label {
     .galeria img {
       width: 100vw; }
   .fyq .faq-content .faq-container .faq-collaps .pregunta {
-    font-size: 15px; }
+    font-size: 20px; }
   .faq-answer p {
     padding: 10px 0;
-    font-size: 10px; } }
+    font-size: 15px; } }
     .about p {
       text-align: center;
+      font-size: 20px;
     }
     .formacion p {
       text-align: center;
+      font-size: 20px;
+    }
+    .subtitle {
+      font-size: 25px;
     }
 body.darkmode{
   background-color: rgb(32, 32, 44);
