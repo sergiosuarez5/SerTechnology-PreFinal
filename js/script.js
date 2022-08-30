@@ -2,7 +2,7 @@
 const carrito = document.querySelector('#carrito')
 const contenedorCarrito = document.querySelector('#lista-carrito tbody')
 const vaciarCarrito = document.querySelector('#vaciar-carrito')
-const listaCursos = document.querySelector('#buy')
+const listaAparatos = document.querySelector('#buy')
 let articulosCarrito = [];
 
 // Confeti
@@ -12,17 +12,17 @@ const jsConfetti = new JSConfetti();
 cargarEvent();
 function cargarEvent() {
     // Cuando agregamos un curso presionando agregar carrito
-    listaCursos.addEventListener('click', agregarCurso)
+    listaAparatos.addEventListener('click', agregarAparatos)
 
-    // Elimina cursos del carrito
-    carrito.addEventListener('click', eliminarCurso)
+    // Elimina articulos del carrito
+    carrito.addEventListener('click', eliminarAparatos)
 
 
     // Muestra los cursos de localstorage
     document.addEventListener('DOMContentLoaded', () => {
         articulosCarrito = JSON.parse( localStorage.getItem('carrito') ) || [];
 
-        mostrarCurso();
+        mostrarAparatos();
     })
     // Vaciar Carrito
     vaciarCarrito.addEventListener('click', (e) => {
@@ -32,62 +32,62 @@ function cargarEvent() {
     })
 }
 
-function agregarCurso(e){
+function agregarAparatos(e){
     e.preventDefault();
     if(e.target.classList.contains('agregar-carrito')) {
-        cursoSeleccionado = e.target.parentElement
+        aparatosSeleccionado = e.target.parentElement
 
-        leerDatosCurso(cursoSeleccionado);
+        leerDatosAparatos(aparatosSeleccionado);
     }
 }
 
-function eliminarCurso(e){
+function eliminarAparatos(e){
     e.preventDefault()
     // console.log(e.target.classList);
-    if(e.target.classList.contains('borrar-curso')){
-        // Accedemos al id del curso que queremos eliminar
+    if(e.target.classList.contains('borrar-aparatos')){
+        // Accedemos al id del articulo que queremos eliminar
         const cursoId = e.target.getAttribute('data-id');
         
         // Elimina del arreglo articulosCarrito por el data-id
-        articulosCarrito = articulosCarrito.filter(curso => curso.id !== cursoId);
-        mostrarCurso()
+        articulosCarrito = articulosCarrito.filter(aparatos => aparatos.id !== aparatosId);
+        mostrarAparatos()
         }
     }
 
 
-function leerDatosCurso(curso){
-    const infoCurso = {
-        imagen: curso.querySelector('img').src,
-        titulo: curso.querySelector('h2').textContent,
-        precio: curso.querySelector('p').textContent,
-        id: curso.querySelector('a').getAttribute('data-id'),
+function leerDatosAparatos(aparatos){
+    const infoAparatos = {
+        imagen: aparatos.querySelector('img').src,
+        titulo: aparatos.querySelector('h2').textContent,
+        precio: aparatos.querySelector('p').textContent,
+        id: aparatos.querySelector('a').getAttribute('data-id'),
         cantidad: 1
     }
-    const existe = articulosCarrito.some(curso => curso.id === infoCurso.id);
+    const existe = articulosCarrito.some(aparatos => aparatos.id === infoAparatos.id);
 
 if(existe){
-    const cursos = articulosCarrito.map(curso =>{
-        if(curso.id === infoCurso.id){
-            curso.cantidad++;
-            return curso;
+    const aparatos = articulosCarrito.map(aparatos =>{
+        if(aparatos.id === infoAparatos.id){
+            aparatos.cantidad++;
+            return aparatos;
         }else{
             return curso;
         }
     })
-    articulosCarrito = [...cursos]
+    articulosCarrito = [...aparatos]
 }else{
-    articulosCarrito = [...articulosCarrito,infoCurso]
+    articulosCarrito = [...articulosCarrito,infoAparatos]
 }
-    mostrarCurso();
+    mostrarAparatos();
 }
 
 
-function mostrarCurso() {
+function mostrarAparatos() {
 
     limpiarHTML();
 
-    articulosCarrito.forEach( curso => {
-        const{imagen, titulo, precio, cantidad, id} = curso;
+    articulosCarrito.forEach( aparatos => {
+        const{imagen, titulo, precio, cantidad, id} = aparatos;
 
         const row = document.createElement('tr');
         row.innerHTML = `
