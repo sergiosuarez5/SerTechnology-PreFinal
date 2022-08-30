@@ -63,7 +63,7 @@ body::-webkit-scrollbar-thumb {
   top: 0;
   width: 100vw; }
   .header .logoHeader img {
-    width: 14rem;
+    width: 12rem;
     transition: all 0.3s;
     margin-top: 4px; }
     .header .logoHeader img:hover {
@@ -95,8 +95,10 @@ body::-webkit-scrollbar-thumb {
   .header .navMenu .menuIcon {
     display: none; }
     .header .navMenu .menuIcon img {
-      width: 45px;
-      height: 45px; }
+      width: 25px;
+      height: 25px;
+      color: #2bc9c6;
+    }
   .header .navMenu #check {
     display: none; }
 
@@ -966,7 +968,8 @@ input[type="radio"]:checked + label {
     margin: 0;
     width: 100vw; }
     .about .aboutDer p {
-      max-width: 70vw; }
+      max-width: 90vw;
+  }
   .galeria {
     width: 48vw; }
     .galeria img {
@@ -978,7 +981,30 @@ input[type="radio"]:checked + label {
     font-size: 15px; } }
     .about p {
       text-align: center;
-      font-size: 30px;
+      font-size: 20px;
+    }
+    .switch span{
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      display: block;
+      background: none;
+      color: #2bc9c6;
+    }
+    
+    .switch::after{
+      content: "";
+      display: block;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      background: #F1F1F1;
+      top: 0;
+      left: 0;
+      right: unset;
+      border-radius: 100px;
+      transition: .3s ease all;
+      box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2);
     }
     .formacion p {
       text-align: center;
@@ -1002,6 +1028,7 @@ body.darkmode{
 
 .darkmode .submenu .fa-cart-shopping{
   color: #fff;
+  padding: 10px;
 }
 
 .darkmode th, .darkmode td{
