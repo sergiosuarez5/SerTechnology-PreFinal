@@ -10,6 +10,10 @@
 }
 
 body{
+
+  /* background-image: url(../img/sale1.jpg);
+  background-repeat: no-repeat;
+  background-size:cover; */
   background-color: #D5D3E0;
 }
 
@@ -319,9 +323,9 @@ main {
   outline: none;
 }
 .switch span{
-  width: 25px;
-  height: 25px;
-  line-height: 25px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
   display: block;
   background: none;
   color: #2bc9c6;
@@ -330,8 +334,8 @@ main {
 .switch::after{
   content: "";
   display: block;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   position: absolute;
   background: #F1F1F1;
   top: 0;
@@ -356,6 +360,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   margin: 2rem;
   max-width: 45rem; }
 
@@ -421,37 +426,32 @@ main {
   padding: .5rem;
   margin-top: 20px; }
   .about p{
-    font-size: 30px;
+    font-size: 22px;
   }
   .about img {
-    width: 100%; 
+    width: 350px; 
   }
 
 
 .formacion {
-  width: 100%;
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
   padding: .5rem;
-  margin-top: 20px; }
-  .formacion p {
+  margin-top: 20px;
+}
+  .formacion  p {
+    text-align: center;
+    font-size: 22px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 2rem;
-    font-size: 30px;
-    max-width: 45rem; }
+  }
   .formacion img {
     width: 100%;
-    }
-    .formacion  .flecha{
-      padding: 10px;
-      transition: all 0.5s;
-    }
-    .formacion .flecha:hover {
-      transform: translateY(-5px);
+    align-items: center;
     }
 
 
@@ -978,10 +978,10 @@ input[type="radio"]:checked + label {
     font-size: 15px; }
   .faq-answer p {
     padding: 10px 0;
-    font-size: 15px; } }
+    font-size: 15px; } 
     .about p {
       text-align: center;
-      font-size: 20px;
+      font-size: 22px;
     }
     .switch span{
       width: 20px;
@@ -1008,11 +1008,12 @@ input[type="radio"]:checked + label {
     }
     .formacion p {
       text-align: center;
-      font-size: 30px;
+      font-size: 22px;
     }
     .subtitle {
       font-size: 25px;
     }
+  }
 body.darkmode{
   background-color: rgb(32, 32, 44);
   color: white;
