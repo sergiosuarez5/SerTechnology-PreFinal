@@ -14,7 +14,7 @@ body{
   /* background-image: url(../img/sale1.jpg);
   background-repeat: no-repeat;
   background-size:cover; */
-  background-color: #D5D3E0;
+  background-color: #fff;
 }
 
 body::-webkit-scrollbar {
@@ -110,9 +110,9 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   box-sizing: border-box;
 }
-.borrar-curso {
-  background-color: red;
-  border-radius: 50%;
+.borrar-aparatos {
+  background-color: rgb(243, 75, 75);
+  border-radius: 10%;
   padding: 5px 10px;
   text-decoration: none;
   color: white;
@@ -308,9 +308,9 @@ main {
   padding: 50px;
 }
 .oferta{
-  background-color: rgb(226, 83, 83);
+  background-color: rgb(243, 235, 95);
   padding: 8px;
-  color: #fff;
+  color: #000;
   border-radius: 10px;
 }
 .switch{
@@ -926,26 +926,51 @@ input[type="radio"]:checked + label {
 
 /* RESPONSIVE DESIGN - MOBILE - 465PX */
 @media (max-width: 465px) {
+  body{
+    background-color:#fff;
+  }
   .wrap .wrap-texto h1 {
     text-align: center;
     font-size: 5rem; }
-  main, .aboutDer p {
+  main, .aboutDer .h2Tienda{
     width: 100vw;
     font-size: 20px;
   }
+
+  main, .aboutDer h2 {
+    font-size: 12px;
+  }
+  main , .title{
+    font-size: 30px;
+  }
   .h2Tienda {
-    font-size: 1.0em;
+    font-size: 1.7em;
     padding: 10px;
   }
-  .title {
-    font-size: 1.8em;
+  main,  .precio{
+    font-size: 10px;
+    padding: 10px;
+  }
+  .guia-title h2{
+    font-size: 10px;
+  }
+  .agregar-carrito {
+    padding: 8px;
+    font-size: 12px;
+  }
+  .oferta{
+    font-size: 10px;
+    padding: 5px;
+  }
+  .buy p {
+    font-size: 15px;
   }
   .wrap .img-mainfo {
     width: 100px;
   }
   .wrap .wrap-texto h2 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #fff; }
     .wrap .wrap-texto .buttom {
       background-color: #2bc9c6;

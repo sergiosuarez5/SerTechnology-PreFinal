@@ -40,13 +40,12 @@ function agregarAparatos(e){
         leerDatosAparatos(aparatosSeleccionado);
     }
 }
-
 function eliminarAparatos(e){
     e.preventDefault()
     // console.log(e.target.classList);
     if(e.target.classList.contains('borrar-aparatos')){
         // Accedemos al id del articulo que queremos eliminar
-        const cursoId = e.target.getAttribute('data-id');
+        const aparatosId = e.target.getAttribute('data-id');
         
         // Elimina del arreglo articulosCarrito por el data-id
         articulosCarrito = articulosCarrito.filter(aparatos => aparatos.id !== aparatosId);
@@ -104,7 +103,7 @@ function mostrarAparatos() {
                 <p id="cantidad">${cantidad}</p>
             </td>
             <td>
-                <a href="#" class="borrar-curso" data-id="${id}"> X </a>
+                <a href="#" class="borrar-aparatos" data-id="${id}"> X </a>
             </td>
         `
 
