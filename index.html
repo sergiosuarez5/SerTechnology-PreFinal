@@ -16,7 +16,7 @@
 </head> 
 <body>
     <!-- Encabezado -->
-    <div class="contenedorGeneral">
+    <div class="contenedorGeneral" id="home">
     <header class="header">
         <div class="logoHeader">
             <a href="index.html"><img src="./img/logosolo.png" alt="Logo de la pagina" width="80"></a>
@@ -35,10 +35,10 @@
             </label>
 
             <ul>
-                <li><a href="./pages/sobre_mi.html">Sobre nosotros</a></li>
+                <li><a href="./pages/nosotros.html">Sobre nosotros</a></li>
                 <li><a href="./pages/tienda.html">Tienda</a></li>
-                <li><a href="#serv">TOP</a></li>
-                <li><a href="#" target="_blank">Contacto</a></li>
+                <li><a href="#top">TOP</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
 
             </ul>
         </nav>
@@ -53,7 +53,7 @@
                 <h2 class="textJs"><span class="autoType"></span>
                     <span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
                 </h2>
-                <a href="./pages/sobre_mi.html" class="buttom">¿Empezamos?</a>
+                <a href="./pages/nosotros.html" class="buttom">¿Empezamos?</a>
                 <img src="./img/icon-arrow-down.svg" alt="" class="flecha">
             </div>
         </section>
@@ -65,7 +65,7 @@
                     ¡Hola! <br> Somos una marca especializada en E-commerce. <br> Ofrecemos productos de alta gama al mejor precio del mercado.
                     <br> ¡Sé parte de nuestra experiencia SerTechnology! 
                 </p>
-                <a href="./pages/sobre_mi.html" class="boton bottomAbout">Conocer más</a>
+                <a href="./pages/nosotros.html" class="boton bottomAbout">Conocer más</a>
             </div>
             <div>
                 <img src="./img/check.png" alt="Imagen de SerTechnology" class="imgAbout">
@@ -73,11 +73,11 @@
         </section>
 
         <section class="terceraSeccion">
-            <h2 class="subtitle" id="serv">Nuestro TOP Gamer <i class="fa-solid fa-cart-shopping"></i></h2>
+            <h2 class="subtitle" id="top">Nuestro TOP Gamer <i class="fa-solid fa-cart-shopping"></i></h2>
     
             <div class="cardContainer">
                 <div class="card">
-            <!-- Tarjeta 1 -->
+            <!-- CARD 1 -->
                     <img src="./img/xboxs.jpg" alt="">
                     <h2><b>XBOX'S</b></h2>
                     <p>Consolas de alta calidad Gamer.
@@ -85,7 +85,7 @@
                     <p><b>Aceptamos tu consola como forma de pago.</b></p>
                     <a href="./pages/tienda.html">SABER MÁS</a>
                 </div>
-            <!-- Tarjeta2 -->
+            <!-- CARD 2 -->
                 <div class="card">
                     <img src="./img/joystick.jpg" alt="">
                     <h2><b>Joystick's Gamer &copy;</b></h2>
@@ -93,17 +93,18 @@
                     <p><b>PC | PS5 | XBOX | ANDROID</b></p>
                     <a href="./pages/tienda.html">SABER MÁS</a>
                 </div>
-            <!-- Tarjeta 3 -->
+            <!-- CARD 3 -->
                 <div class="card">
                     <img src="./img/ps5.jpg" alt="">
                     <h2><b>Play Station 5 &copy;</b></h2>
-                    <p>Obten tu consola del momento no esperes más! <br>
+                    <p>Obten tu consola del momento no esperes más! <br><br>
                         <b>¡Solicítala en nuestra Tienda!</b>
                     </p>
                     <a href="./pages/tienda.html">SABER MÁS</a>
                 </div>
             </div>
         </section>
+        <a class="gotopbtn" href="#home"><i class="fa-solid fa-chevron-up"></i></a>
     </main>
         <!-- Pie de pagina -->
         <footer class="footer">
@@ -118,10 +119,10 @@
                 <div class="footerMenu">
                     <div class="footerContenido">
                         <p class="menuTitulo">Menu</p>
-                        <a href="./pages/sobre_mi.html" class="menuItemFooter">Sobre nosotros</a>
+                        <a href="./pages/nosotros.html" class="menuItemFooter">Sobre nosotros</a>
                         <a href="./pages/tienda.html" class="menuItemFooter">Tienda</a>
-                        <a href="../index.html#serv" class="menuItemFooter">TOP</a>
-                        <a href="#" target="_blank" class="menuItemFooter">Contacto</a>
+                        <a href="../index.html#top" class="menuItemFooter">TOP</a>
+                        <a href="./pages/contacto.html" class="menuItemFooter">Contacto</a>
 
                     </div>
                     <div class="footerContenido">
@@ -149,6 +150,8 @@
 
     <script src="./js/darkmode.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="./js/typed.js"></script>
 </body>
 </html>

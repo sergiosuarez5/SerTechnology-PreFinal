@@ -10,10 +10,6 @@
 }
 
 body{
-
-  /* background-image: url(../img/sale1.jpg);
-  background-repeat: no-repeat;
-  background-size:cover; */
   background-color: #fff;
 }
 
@@ -39,10 +35,10 @@ body::-webkit-scrollbar-thumb {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, auto);
   grid-template-areas: "header"
- "primeraSeccion"
- "segundaSeccion"
- "terceraSeccion"
- "footer"; }
+                      "primeraSeccion"
+                      "segundaSeccion"
+                      "terceraSeccion"
+                      "footer"; }
 
 .primeraSeccion {
   grid-area: primeraSeccion; }
@@ -110,6 +106,7 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   box-sizing: border-box;
 }
+
 .borrar-aparatos {
   background-color: rgb(243, 75, 75);
   border-radius: 10%;
@@ -151,17 +148,17 @@ body::-webkit-scrollbar-thumb {
   text-decoration: none;
   cursor: pointer;
   border-radius: 4px;
-  background-color: green;
+  background-color: #2bc9c6;
 }
 .buy-card:hover{
   opacity: .6;
 }
 
-.submenu .fa-cart-shopping{
+.submenu .fa-bag-shopping{
     font-size: 1.8rem;
     color: white;
 }
-.fa-cart-shopping:hover{
+.fa-bag-shopping:hover{
   color: #2bc9c6;
 }
 
@@ -173,6 +170,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .submenu{
+  text-align: center;
   position: relative;
 }
 
@@ -186,35 +184,68 @@ body::-webkit-scrollbar-thumb {
   cursor: pointer;
   right: 0;
   top: 100%;
+  justify-content: center;
   padding: 20px;
   z-index: 10000;
   background-color: white;
+  border: 2px solid #2bc9c6;
+  border-radius: 15px;
   min-height: 400px;
   min-width: 300px;
 }
 /* Whatsapp Fixed */
 .btn-wsp {
   position: fixed;
-  width: 55px;
-  height: 55px;
-  line-height: 55px;
-  bottom: 30px;
-  right: 30px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  bottom: 110px;
+  right: 20px;
   background-color: #2bc9c6;
   color: #fff;
   border-radius: 50px;
+  border: 1px solid #EEEEEE;
   text-align: center;
   font-size: 30px;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
-  z-index: 100; 
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.3);
+  z-index: 100;
   transition: all 0.5s;
 }
   .btn-wsp:hover {
     text-decoration: none;
-    color: #267c7b;
+    color: #2bc9c6;
     background-color: #fff; 
     transform: translateY(10px);
   }
+
+  .gotopbtn {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: #2bc9c6;
+    font-size: 12px;
+    bottom: 40px;
+    right: 20px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: #EEEEEE;
+    border-radius: 50px;
+    border: 1px solid #EEEEEE;
+    font-weight: 900px;
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s;
+}
+.gotopbtn:hover{
+    text-decoration: none;
+    color: #267c7b;
+    background-color: #fff;
+    transform: translateY(10px);
+}
+
+.gotopbtn i{
+    font-size: 20px;
+} 
 
 #inpage {
   color: #fff; }
@@ -815,6 +846,50 @@ input[type="radio"]:checked + label {
           .footer .footerContainer .footerContenido .socialContainer i:hover {
             opacity: 0.7; }
 
+/* CONTACTO */
+.title i {
+  color: #2bc9c6;
+}
+input textarea {
+  padding: 20px;
+  border-radius: 50px;
+}
+.contact-us{
+  text-align: center;
+  padding: 10px;
+}
+.contact-us p {
+  padding: 15px;
+  font-size: 20px;
+}
+.contact-info{
+  padding: 50px;
+}
+li i{
+  color: #2bc9c6;
+  font-size: 30px;
+}
+.buttom-contact{
+  background-color: #2bc9c6;
+  padding: 10px;
+  margin-top: .5rem;
+  border-radius: 1.0rem;
+  text-align: center;
+  text-decoration: none;
+  color: #fff; 
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.3);
+transition: all 0.5s;
+}
+  .buttom-contact:hover {
+    background-color: #267c7b; 
+    transform: translateY(10px);
+    box-shadow: 0 12px 16px rgba(255, 255, 255, 0.2);
+  }
+
+
+/* FIN CONTACTO */
+
+            
 @media (max-width: 1579px) {
   .cuerpo .productoInfoContenedor {
     margin-left: 10rem; } }
@@ -1043,19 +1118,16 @@ input[type="radio"]:checked + label {
     }
   }
 body.darkmode{
-  background-color: rgb(32, 32, 44);
+  background-color: #2bc9c6;
   color: white;
 }
 
-/* .darkmode .fyq .faq-content .faq-container .faq-collaps{
-  background-color: #000;
-} */
 
 .darkmode .line{
   background-color: white;
 }
 
-.darkmode .submenu .fa-cart-shopping{
+.darkmode .submenu .fa-bag-shopping{
   color: #fff;
   padding: 10px;
 }

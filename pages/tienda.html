@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,208 +13,278 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="../img/logotech.png" type="image/x-icon">
     <!-- Css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <title>SerTechnology | Tienda</title>
 </head>
+
 <body>
+
     <!-- Encabezado -->
-    <div class="contenedorGeneral">
+
+    <div class="contenedorGeneral" id="home">
         <header class="header">
             <div class="logoHeader">
                 <a href="../index.html"><img src="../img/logosolo.png" alt="Logo de la pagina"></a>
             </div>
 
-        <div>
-            <button class="switch" id="dark">
-                <span><i class="fas fa-sun"></i></span>
-                <span><i class="fas fa-moon"></i></span>
-            </button>
-        </div>
-        <ul>
-            <li class="submenu">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <div id="carrito">
-                    <table id="lista-carrito" class="u-full-width">
-                        <thead>
-                            <tr>
-                                <th>Imagen</th>
-                                <th>Nombre</th>
-                                <th>Precio</th>
-                                <th>Cantidad</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>
+            <div>
+                <button class="switch" id="dark">
+                    <span><i class="fas fa-sun"></i></span>
+                    <span><i class="fas fa-moon"></i></span>
+                </button>
+            </div>
+            <ul>
+                <li class="submenu">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <div id="carrito">
+                        <table id="lista-carrito" class="u-full-width">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th>Cantidad</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                        <a href="#" id="comprar-carrito" class="buy-card u-full-width">Comprar</a>
+                        <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                    </div>
+                </li>
+            </ul>
+            <nav class="navMenu">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="menuIcon"><img src="../img/menu(3).png" alt="Menu"></i>
+                </label>
+                <ul>
+                    <li><a href="./nosotros.html">Sobre nosotros</a></li>
+                    <li><a href="./tienda.html" id="inpage">Tienda</a></li>
+                    <li><a href="../index.html#top">TOP</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
 
-                        </tbody>
-                    </table>
-                    <a href="#" id="comprar-carrito" class="buy-card u-full-width">Comprar</a>
-                    <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
-                </div>
-            </li>
-        </ul>
-        <nav class="navMenu">
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="menuIcon"><img src="../img/menu(3).png" alt="Menu"></i>
-            </label>
-        <ul>
-            <li><a href="./sobre_mi.html">Sobre nosotros</a></li>
-            <li><a href="./tienda.html" id="inpage">Tienda</a></li>
-            <li><a href="../index.html#serv">TOP</a></li>
-            <li><a href="#" target="_blank">Contacto</a></li>
-        </ul> 
-    </nav>
-    </header>
-    <!-- Contenido -->
-    <main class="main-tienda">
-        <a href="#" class="btn-wsp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-        <h1 class="title">TIENDA<i class="fa-solid fa-cart-shopping carrito-tienda"></i></h1>
-        <h2 class="h2Tienda">¡ACCEDE A NUESTROS PRODUCTOS CON DESCUENTOS EXCLUSIVOS!</h2>
-        <div class="buy" id="buy">
-            <div class="item1" id="item">
-                <img src="../img/iphone13.jpg" alt="" width="400">
-                <h2 class="guiaTitle">Iphone 13 Pro Max</h2>
-                <p class="precio"><b>$1499,99</b></p>
-                <a href="#" class="boton agregar-carrito" data-id="1">AGREGAR</a><br><br>
-                <a class="oferta">OFERTA!</a>
-            </div>
-            <div class="item2" id="item">
-                <img src="../img/monitor.webp" alt="" width="290">
-                <h2 class="guiaTitle">Monitor Benq</h2>
-                <p class="precio"><b>$1999,99</b></p>
-                <a href="#" class="boton agregar-carrito" data-id="2">AGREGAR</a><br><br>
-                <a class="oferta">OFERTA!</a>
-            </div>
-            <div class="item3" id="item">
-                <img src="../img/airpods.webp" alt="" width="375">
-                <h2 class="guiaTitle">Airpods</h2>
-                <p class="precio"><b>$99,99</b></p>
-                <a class="boton agregar-carrito" id="agregar-carrito" href="#" data-id="3">AGREGAR</a><br><br>
-                <a class="oferta">OFERTA!</a>
-            </div>
-            <div class="item4" id="item">
-                <img src="../img/macbookpro.jpg" alt="" width="400">
-                <h2 class="guiaTitle">MacBook Pro 1tb</h2>
-                <p class="precio"><b>$2399,99</b></p>
-                <a class="boton agregar-carrito" id="agregar-carrito" href="#" data-id="4">AGREGAR</a><br><br>
-                <a class="oferta">OFERTA!</a>
-            </div>
-            <div class="item5" id="item">
-                <img src="../img/sony.png" alt="" width="290">
-                <h2 class="guiaTitle">Monitor Sony Programmer</h2>
-                <p class="precio"><b>$1899,99</b></p>
-                <a class="boton agregar-carrito" id="agregar-carrito" href="#" data-id="5">AGREGAR</a><br><br>
-                <a class="oferta">OFERTA!</a>
-            </div>
-            <div class="item6" id="item">
-                <img src="../img/macbook.jpg" alt="" width="375">
-                <h2 class="guiaTitle">MacBook Pro 1tb 16''</h2>
-                <p class="precio"><b>$2599,99</b></p>
-                <a class="boton agregar-carrito" id="agregar-carrito" href="#" data-id="6">AGREGAR</a><br><br>
-                <a class="oferta">OFERTA!</a>
-            </div>
-            <div class="item7" id="item">
-                <img src="../img//silla2.jpg" alt="" width="320">
-                <h2 class="guiaTitle">Silla Gamer Blue</h2>
-                <p class="precio"><b>$399,99</b></p>
-                <a class="boton agregar-carrito" id="agregar-carrito" href="#" data-id="7">AGREGAR</a><br><br>
-                <a class="oferta">OFERTA!</a>
-            </div>
-            <div class="item8" id="item">
-                <img src="../img/silla.jpg" alt="" width="305">
-                <h2 class="guiaTitle">Silla Gamer Leds</h2>
-                <p class="precio"><b>$499,99</b></p>
-                <a class="boton agregar-carrito" id="agregar-carrito" href="#" data-id="8">AGREGAR</a><br><br>
-                <a class="oferta">OFERTA!</a>
-            </div>
-            <div class="item9" id="item">
-                <img src="../img/silla3.jpg" alt="" width="310">
-                <h2 class="guiaTitle">Silla Gamer U.Edition</h2>
-                <p class="precio"><b>$699,99</b></p>
-                <a class="boton agregar-carrito" id="agregar-carrito" href="#" data-id="9">Agregar al Carrito</a><br><br>
-                <a class="oferta">OFERTA!</a>
-            </div>
-            <div class="item9" id="item">
-                <img src="../img/ps5_1.jpg" alt="" width="380">
-                <h2 class="guiaTitle">PlayStation 5 &copy;</h2>
-                <p class="precio"><b>$999,99</b></p>
-                <a class="boton agregar-carrito" id="agregar-carrito" href="#" data-id="10">AGREGAR</a><br><br>
-                <a class="oferta">OFERTA!</a>
-            </div>
-            <div class="item9" id="item">
-                <img src="../img/switch.png" alt="" width="310">
-                <h2 class="guiaTitle">Nintendo Switch ™</h2>
-                <p class="precio"><b>$499,99</b></p>
-                <a class="boton agregar-carrito" id="agregar-carrito" href="#" data-id="11">AGREGAR</a><br><br>
-                <a class="oferta">OFERTA!</a>
-            </div>
-            <div class="item9" id="item">
-                <img src="../img/xbox1.webp" alt="" width="330">
-                <h2 class="guiaTitle">XBOX'S</h2>
-                <p class="precio"><b>$799,99</b></p>
-                <a class="boton agregar-carrito" id="agregar-carrito" href="#" data-id="12">AGREGAR</a><br><br>
-                <a class="oferta">OFERTA!</a>
-            </div>
-            <p class="h2Tienda">Una vez finalizada la compra y acreditado tu pago, te estará llegando un mail con un enlace de seguimiento. <i class="fa-solid fa-box-open"></i></p>
-        </div>
-        <div class="buttom-cargar">
-            <a href="#" class="botonTienda bottom-tienda">MÁS PRODUCTOS</a>
-            <p>.</p>
-            <p>.</p>
-            <p>.</p>
-        </div>
+        <!-- Contenido TIENDA -->
 
-        <h2 class="subtitle">Consultas | Información <i class="fa-solid fa-message"></i></h1>
-        <h3 class="h2Tienda">¡Aclaranos tus dudas te ayudamos!</h3>
-        <section class="fyq">
-        <div class="faq-content">
-            <div class="faq-container first">
-                <div class="faq-collaps">
-                    <h3 class="pregunta">¿Cuáles son los metodos de pago?</h3>
-                    <div class="arrow-container">
-                        <p class="line"></p>
-                        <p class="line"></p> 
-                    </div>
+        <main class="main-tienda">
+            <a href="#" class="btn-wsp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <h1 class="title">TIENDA<i class="fa-solid fa-cart-shopping carrito-tienda"></i></h1>
+            <h2 class="h2Tienda">¡ACCEDE A NUESTROS PRODUCTOS CON DESCUENTOS EXCLUSIVOS!</h2>
+            <div class="buy" id="buy">
+
+                
+                <div class="item1" id="item">
+                    <img src="../img/iphone13.jpg" alt="" width="400">
+                    <h2 class="prodTitle">Iphone 13 Pro Max</h2>
+                    <p class="precio"><b>$1499,99</b></p>
+                    <a href="#" class="boton agregar-carrito" data-id="1">AGREGAR</a><br><br>
+                    <a class="oferta">OFERTA!</a>
                 </div>
-                <div class="faq-answer">
-                    <p>Se puede abonar Efectivo | Tarjeta de crédito | Tarjeta de débito | Transferencia o Depósito bancario.
-                    </p>
-                    <p>El pago del mismo se realizará en moneda local o dependiendo del país en el que estés.</p>
+
+                <div class="item2" id="item">
+                    <img src="../img/monitor.webp" alt="" width="290">
+                    <h2 class="prodTitle">Monitor Benq</h2>
+                    <p class="precio"><b>$1999,99</b></p>
+                    <a href="#" class="boton agregar-carrito" data-id="2">AGREGAR</a><br><br>
+                    <a class="oferta">OFERTA!</a>
                 </div>
+
+                <div class="item3" id="item">
+                    <img src="../img/airpods.webp" alt="" width="375">
+                    <h2 class="prodTitle">Airpods</h2>
+                    <p class="precio"><b>$99,99</b></p>
+                    <a class="boton agregar-carrito" data-id="3" href="#" data-id="3">AGREGAR</a><br><br>
+                    <a class="oferta">OFERTA!</a>
+                </div>
+
+                <div class="item4" id="item">
+                    <img src="../img/macbookpro.jpg" alt="" width="400">
+                    <h2 class="prodTitle">MacBook Pro 1tb</h2>
+                    <p class="precio"><b>$2399,99</b></p>
+                    <a class="boton agregar-carrito" data-id="4" href="#" data-id="4">AGREGAR</a><br><br>
+                    <a class="oferta">OFERTA!</a>
+                </div>
+
+                <div class="item5" id="item">
+                    <img src="../img/sony.png" alt="" width="290">
+                    <h2 class="prodTitle">Monitor Sony Programmer</h2>
+                    <p class="precio"><b>$1899,99</b></p>
+                    <a class="boton agregar-carrito" data-id="5" href="#" data-id="5">AGREGAR</a><br><br>
+                    <a class="oferta">OFERTA!</a>
+                </div>
+
+                <div class="item6" id="item">
+                    <img src="../img/macbook.jpg" alt="" width="375">
+                    <h2 class="prodTitle">MacBook Pro 1tb 16''</h2>
+                    <p class="precio"><b>$2599,99</b></p>
+                    <a class="boton agregar-carrito" data-id="6" href="#" data-id="6">AGREGAR</a><br><br>
+                    <a class="oferta">OFERTA!</a>
+                </div>
+
+                <div class="item7" id="item">
+                    <img src="../img//silla2.jpg" alt="" width="320">
+                    <h2 class="prodTitle">Silla Gamer Blue</h2>
+                    <p class="precio"><b>$399,99</b></p>
+                    <a class="boton agregar-carrito" data-id="7" href="#" data-id="7">AGREGAR</a><br><br>
+                    <a class="oferta">OFERTA!</a>
+                </div>
+
+                <div class="item8" id="item">
+                    <img src="../img/silla.jpg" alt="" width="305">
+                    <h2 class="prodTitle">Silla Gamer Leds</h2>
+                    <p class="precio"><b>$499,99</b></p>
+                    <a class="boton agregar-carrito" data-id="8" href="#" data-id="8">AGREGAR</a><br><br>
+                    <a class="oferta">OFERTA!</a>
+                </div>
+
+                <div class="item9" id="item">
+                    <img src="../img/silla3.jpg" alt="" width="310">
+                    <h2 class="prodTitle">Silla Gamer U.Edition</h2>
+                    <p class="precio"><b>$699,99</b></p>
+                    <a class="boton agregar-carrito" data-id="9" href="#" data-id="9">Agregar al
+                        Carrito</a><br><br>
+                    <a class="oferta">OFERTA!</a>
+                </div>
+
+                <div class="item9" id="item">
+                    <img src="../img/ps5_1.jpg" alt="" width="380">
+                    <h2 class="prodTitle">PlayStation 5 &copy;</h2>
+                    <p class="precio"><b>$999,99</b></p>
+                    <a class="boton agregar-carrito" data-id="10" href="#" data-id="10">AGREGAR</a><br><br>
+                    <a class="oferta">OFERTA!</a>
+                </div>
+
+                <div class="item9" id="item">
+                    <img src="../img/switch.png" alt="" width="310">
+                    <h2 class="prodTitle">Nintendo Switch ™</h2>
+                    <p class="precio"><b>$499,99</b></p>
+                    <a class="boton agregar-carrito" data-id="11" href="#" data-id="11">AGREGAR</a><br><br>
+                    <a class="oferta">OFERTA!</a>
+                </div>
+
+                <div class="item9" id="item">
+                    <img src="../img/xbox1.webp" alt="" width="330">
+                    <h2 class="prodTitle">XBOX'S</h2>
+                    <p class="precio"><b>$799,99</b></p>
+                    <a class="boton agregar-carrito" data-id="12" href="#" data-id="12">AGREGAR</a><br><br>
+                    <a class="oferta">OFERTA!</a>
+                </div>
+
+                <p class="h2Tienda">Una vez finalizada la compra y acreditado tu pago, te estará llegando un mail con un
+                    enlace de seguimiento. <i class="fa-solid fa-box-open"></i></p>
             </div>
-            <div class="faq-container">
-                <div class="faq-collaps">
-                    <h3 class="pregunta">¿Tienen garantía los productos?</h3>
-                    <div class="arrow-container">
-                        <p class="line"></p>
-                        <p class="line"></p>
-                    </div>
-                </div>
-                <div class="faq-answer">
-                    <p>Todas los productos tienen garantía de un año.
-                    </p>
-                    <p>Siempre y cuando cumpla con las reglas del producto Empaque | Ticket | Funcionalidad.</p>
-                </div>
-            </div><div class="faq-container">
-                <div class="faq-collaps">
-                    <h3 class="pregunta">Consultas a través de nuestro Contacto.</h3>
-                    <div class="arrow-container">
-                        <p class="line"></p>
-                        <p class="line"></p>
-                    </div>
-                </div>
-                <div class="faq-answer">
-                    <p>Al comunicarte con nosotros te daremos una atención especializada y asesoramiento en el producto que elijas!
-                    </p>
-                </div>
+            <div class="buttom-cargar">
+                <a href="#" class="botonTienda bottom-tienda">MÁS PRODUCTOS</a>
+                <p>.</p>
+                <p>.</p>
+                <p>.</p>
             </div>
-        </div>
-        </section>
-        
-    </main>
-        <!-- Pie de pagina -->
+            <!-- FIN PRODUCTOS -->
+            <!-- PREGUNTAS CLIENTES -->
+            <h2 class="subtitle">Consultas | Información <i class="fa-solid fa-message"></i></h1>
+                <h3 class="h2Tienda">¡Aclaranos tus dudas te ayudamos!</h3>
+                <section class="fyq">
+                    <div class="faq-content">
+                        <div class="faq-container first">
+                            <div class="faq-collaps">
+                                <h3 class="pregunta">¿Cuáles son los metodos de pago?</h3>
+                                <div class="arrow-container">
+                                    <p class="line"></p>
+                                    <p class="line"></p>
+                                </div>
+                            </div>
+
+                            <div class="faq-answer">
+                                <p>Se puede abonar Efectivo | Tarjeta de crédito | Tarjeta de débito | Transferencia o
+                                    Depósito bancario.
+                                </p>
+                                <p>El pago del mismo se realizará en moneda local o dependiendo del país en el que
+                                    estés.</p>
+                            </div>
+
+                        </div>
+
+                        <div class="faq-container">
+                            <div class="faq-collaps">
+                                <h3 class="pregunta">¿Tienen garantía los productos?</h3>
+                                <div class="arrow-container">
+                                    <p class="line"></p>
+                                    <p class="line"></p>
+                                </div>
+                            </div>
+
+                            <div class="faq-answer">
+                                <p>Todas los productos tienen garantía de un año.
+                                </p>
+                                <p>Siempre y cuando cumpla con las reglas del producto Empaque | Ticket | Funcionalidad.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="faq-container">
+                            <div class="faq-collaps">
+                                <h3 class="pregunta">Consultas a través de nuestro Contacto.</h3>
+                                <div class="arrow-container">
+                                    <p class="line"></p>
+                                    <p class="line"></p>
+                                </div>
+                            </div>
+
+                            <div class="faq-answer">
+
+                                <p>Al comunicarte con nosotros te daremos una atención especializada y asesoramiento en
+                                    el producto que elijas!
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+                <a class="gotopbtn" href="#home"><i class="fa-solid fa-chevron-up"></i></a>
+                <section class="container">
+                    <div class="d-flex justify-content-center pb-4">
+                        <div class="col-sm-6 col-md-6 col-lg-4  py-5  shadow-lg p-3 mb-5 bg-body rounded" id="form">
+                            <form id="form" method="post" >
+                                <div class="mb-2 text-center">
+                                    <label for="nombre"></label>
+                                    <input type="text" class="form-control text-center" id="nombre"  placeholder="Nombre/s" required>
+                                </div>
+                                <div class="mb-2 text-center">
+                                    <label for="apellido"></label>
+                                    <input type="text" class="form-control text-center" id="apellido"  placeholder="Apellido" required>
+                                </div>
+                                <div class="mb-2 text-center">
+                                    <label for="dirección"></label>
+                                    <input type="text" class="form-control text-center" id="dirección"  placeholder="Dirección" required>
+                                </div>
+                                <div class="mb-2 text-center">
+                                    <label for="código postal"></label>
+                                    <input type="number" class="form-control text-center" id="código"  placeholder="Código postal" required>
+                                </div>
+                            <div class="mb-2 text-center"> 
+                                <label for="correo"></label>
+                                <input type="email" class="form-control text-center" id="correo" placeholder="Email" required>
+                            </div>
+                            <div class="mb-2 text-center">
+                                <label for="mensaje"></label>
+                                <textarea name="referencia" id="mensaje" class="form-control text-center" placeholder="¡Escribenos un mensaje!" required></textarea>
+                            </div>
+                            <input type='submit' class="btn btn-secondary" id='alta' value='Enviar' >
+                            </form>
+                        </div>
+                    </div>
+                </section>
+        </main>
+        <!-- FOOTER INICIA -->
         <footer class="footer">
             <div class="footerContainer">
                 <div class="footerContenido">
@@ -226,12 +297,12 @@
                 <div class="footerMenu">
                     <div class="footerContenido">
                         <p class="menuTitulo">Menu</p>
-                        <a href="./sobre_mi.html" class="menuItemFooter">Sobre nosotros</a>
+                        <a href="./nosotros.html" class="menuItemFooter">Sobre nosotros</a>
                         <a href="./tienda.html" class="menuItemFooter">Tienda</a>
-                        <a href="../index.html#serv" class="menuItemFooter">TOP</a>
-                        <a href="#" target="_blank" class="menuItemFooter">Contacto</a>
+                        <a href="../index.html#top" class="menuItemFooter">TOP</a>
+                        <a href="./contacto.html" class="menuItemFooter">Contacto</a>
 
-                    </div>                    
+                    </div>
                     <div class="footerContenido">
                         <p class="menuTitulo">Legal</p>
                         <a href="#" class="menuItemFooter">Privacidad</a>
@@ -239,11 +310,12 @@
                         <a href="#" class="menuItemFooter">Terminos y Condiciones</a>
                     </div>
                 </div>
-    
+
                 <div class="footerContenido">
-                <p class="menuTitulo">Redes Sociales</p>
+                    <p class="menuTitulo">Redes Sociales</p>
                     <div class="socialContainer">
-                        <a href="https://www.instagram.com/serhuella/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/serhuella/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
                         <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
                         <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
                     </div>
@@ -253,10 +325,21 @@
                 <p class="copyright">&copy;2022, SerTechnology</p>
             </div>
         </footer>
+        <!-- FIN FOOTER -->
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <script src="../js/script.js"></script>
+
     <script src="../js/darkmode.js"></script>
+
 </body>
+
 </html>

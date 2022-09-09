@@ -3,22 +3,22 @@ const carrito = document.querySelector('#carrito')
 const contenedorCarrito = document.querySelector('#lista-carrito tbody')
 const vaciarCarrito = document.querySelector('#vaciar-carrito')
 const listaAparatos = document.querySelector('#buy')
+
 let articulosCarrito = [];
 
 // Confeti
 const jsConfetti = new JSConfetti();
 
-
 cargarEvent();
 function cargarEvent() {
-    // Cuando agregamos un curso presionando agregar carrito
+    // Cuando agregamos un articulo presionando agregar carrito
     listaAparatos.addEventListener('click', agregarAparatos)
 
     // Elimina articulos del carrito
     carrito.addEventListener('click', eliminarAparatos)
 
 
-    // Muestra los cursos de localstorage
+    // Muestra los articulos de localstorage
     document.addEventListener('DOMContentLoaded', () => {
         articulosCarrito = JSON.parse( localStorage.getItem('carrito') ) || [];
 
@@ -90,8 +90,8 @@ function mostrarAparatos() {
 
         const row = document.createElement('tr');
         row.innerHTML = `
-        <td>
-                <img src="${imagen}" width="100">
+            <td>
+                <img src="${imagen}" width="50">
             </td>
             <td>
                 ${titulo}
@@ -113,6 +113,17 @@ function mostrarAparatos() {
     // Funcion que agrega carrito de compras al storage
     sincronizarStorage();
 }
+
+    //ventana de alerta COMPRA exitosa con libreria SWEET ALERT
+const btn = document.querySelector("#comprar-carrito");
+    btn.addEventListener("click",() =>{
+        Swal.fire({
+            title:'Felicitaciones',
+            text:'¡Compra realizada con exito. Te llegara un mail con el seguimiento!',
+            icon:'success',
+            confirmButtonText:'Ok',
+        });
+});
 
 function sincronizarStorage() {
     localStorage.setItem('carrito', JSON.stringify(articulosCarrito))
@@ -142,3 +153,36 @@ document.querySelector(".buy-card").addEventListener('click', (e) =>{
     articulosCarrito = []
         limpiarHTML();
 })
+
+var form = document.getElementById('form')
+
+form.addEventListener('submit',function(e){
+    e.preventDefault()
+
+    var nombre = document.getElementById('nombre').value
+    var apellido = document.getElementById('apellido').value
+    var dirección = document.getElementById('dirección').value
+    var código = document.getElementById('código').value
+    var correo = document.getElementById('correo').value
+    var mensaje = document.getElementById('mensaje').value
+
+    fetch('https://jsonplaceholder.typicode.com/posts',{
+    method:'POST',
+    body: JSON.stringify({
+        nombre: nombre,
+        apellido:apellido,
+        dirección: dirección,
+        código: código,
+        correo:correo,
+        mensaje:mensaje,
+        userId:1,
+        
+    }),
+    headers:{
+        'content-type': 'application/json;charset=UTF-8',
+        },
+    })
+    .then((response) => response.json())
+    .then((data) => console.log(data))
+    Swal.fire('¡Tu mensaje ha sido enviado con éxito! <br> Te estaremos contestando a la brevedad posible. <br> Gracias!')
+    })
