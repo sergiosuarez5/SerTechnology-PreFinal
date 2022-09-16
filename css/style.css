@@ -91,7 +91,7 @@ body::-webkit-scrollbar-thumb {
     font-size: 20px;
     text-decoration: none; }
     .header .navMenu a:hover {
-      border-bottom: 1px solid #111; }
+      border-bottom: 2px solid #fff; }
   .header .navMenu .menuIcon {
     display: none; }
     .header .navMenu .menuIcon img {
@@ -104,6 +104,7 @@ body::-webkit-scrollbar-thumb {
 
 .u-full-width{
   width: 100%;
+  font-size: 12px;
   box-sizing: border-box;
 }
 
@@ -141,9 +142,9 @@ body::-webkit-scrollbar-thumb {
   color: #fff;
   text-align: center;
   font-size: 11px;
-  font-weight: 400;
+  font-weight: 900;
   line-height: 38px;
-  letter-spacing: .1rem;
+  letter-spacing: 0.3rem;
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
@@ -152,11 +153,14 @@ body::-webkit-scrollbar-thumb {
 }
 .buy-card:hover{
   opacity: .6;
+  color: #2bc9c6;
+  background-color: #000;
 }
 
 .submenu .fa-bag-shopping{
-    font-size: 1.8rem;
-    color: white;
+    color: #fff;
+    font-size: 1.5em;
+    padding: 10px 22px 0px 2px;
 }
 .fa-bag-shopping:hover{
   color: #2bc9c6;
@@ -319,6 +323,7 @@ main {
   .boton a {
     color: #fff; }
     .boton:hover {
+      color: #fff;
       background-color: #267c7b;
       transform: translateY(-5px);
       box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
@@ -340,7 +345,7 @@ main {
 }
 .oferta{
   background-color: rgb(243, 235, 95);
-  padding: 8px;
+  padding: 5px;
   color: #000;
   border-radius: 10px;
 }
@@ -359,7 +364,7 @@ main {
   line-height: 30px;
   display: block;
   background: none;
-  color: #2bc9c6;
+  color: #fff;
 }
 
 .switch::after{
@@ -378,7 +383,6 @@ main {
 }
 
 .switch.active{
-  background: #2bc9c6;
   color: #000;
 }
 
@@ -394,6 +398,70 @@ main {
   text-align: center;
   margin: 2rem;
   max-width: 45rem; }
+
+  .item1  i{
+    padding: 10px;
+    font-size: 20px;
+  }
+  .main-tienda .fa-heart{
+    color: #2bc9c6
+  }
+  .main-tienda .fa-heart:hover{
+    color: #bd2828;;
+  }
+  .main-tienda .fa-arrow-up-from-bracket {
+    color: #000;
+  }
+  .main-tienda .fa-arrow-up-from-bracket:hover{
+    color: #2bc9c6;
+  }
+  .main-tienda .fa-bookmark {
+    color: #000;
+  }
+  .main-tienda .fa-bookmark:hover{
+    color: #2bc9c6;
+  }
+  .item2  i{
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .item3  i{
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .item4  i{
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .item5  i{
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .item6  i{
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .item7  i{
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .item8  i{
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .item9  i{
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
 
 .cardContainer {
   width: 100%;
@@ -521,6 +589,18 @@ main {
       transform: translateY(-5px);
       box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
 
+      .prodTitle{
+        font-size: 1.2em;
+      }
+      .precio{
+        font-size: 0.5em;
+        color: #309d9b;
+      }
+
+      .main-tienda .fa-bookmark .fa-heart .fa-arrow-up-from-bracket{
+        font-size: 20px;
+      }
+
 .buy {
   display: flex;
   align-items: center;
@@ -571,7 +651,7 @@ main {
   align-items: center;
   flex-direction: column; }
   .fyq .faq-content {
-    width: 60%;
+    width: 80%;
     height: auto;
     display: flex;
     justify-content: center;
@@ -584,7 +664,7 @@ main {
       z-index: 1;
       cursor: pointer;
       transition: 0.5s;
-      border-bottom: 1px solid #afafaf; }
+      border-bottom: 2px solid #2bc9c6; }
       .fyq .faq-content .faq-container .faq-collaps {
         height: 80px;
         width: 100%;
@@ -885,7 +965,11 @@ transition: all 0.5s;
     transform: translateY(10px);
     box-shadow: 0 12px 16px rgba(255, 255, 255, 0.2);
   }
+  iframe{
+    width: 100%;
+    box-shadow: 0 12px 16px rgba(255, 255, 255, 0.2);
 
+  }
 
 /* FIN CONTACTO */
 
@@ -917,7 +1001,7 @@ transition: all 0.5s;
       display: block;
       position: fixed;
       top: 70px;
-      left: -100%;
+      left: -100%;;
       background: #2bc9c6;
       width: 100vw;
       height: 100vh;
@@ -997,7 +1081,7 @@ transition: all 0.5s;
     font-size: 20px; }
   .faq-answer p {
     padding: 10px 0;
-    font-size: 15px; } }
+    font-size: 12px; } }
 
 /* RESPONSIVE DESIGN - MOBILE - 465PX */
 @media (max-width: 465px) {
@@ -1078,10 +1162,10 @@ transition: all 0.5s;
     .galeria img {
       width: 100vw; }
   .fyq .faq-content .faq-container .faq-collaps .pregunta {
-    font-size: 15px; }
+    font-size: 14px; }
   .faq-answer p {
     padding: 10px 0;
-    font-size: 15px; } 
+    font-size: 12px; } 
     .about p {
       text-align: center;
       font-size: 22px;
@@ -1118,8 +1202,9 @@ transition: all 0.5s;
     }
   }
 body.darkmode{
-  background-color: #2bc9c6;
+  /* background-color: #2bc9c6; */
   color: white;
+  background-image: url(../img/bg.jpg);
 }
 
 
@@ -1129,7 +1214,7 @@ body.darkmode{
 
 .darkmode .submenu .fa-bag-shopping{
   color: #fff;
-  padding: 10px;
+
 }
 
 .darkmode th, .darkmode td{
