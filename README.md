@@ -1,3 +1,3 @@
-Proyecto de SerTechnology un E-Commerce en el Curso de JAVASCRIPT.
+Proyecto de SerTechnology un E-Commerce Curso JAVASCRIPT.
 
 Sergio Suarez.
