@@ -1,16 +1,23 @@
-(() => {
-    'use strict'
+const btn = document.getElementById('button');
 
-    const forms = document.querySelectorAll('.needs-validation')
+document.getElementById('form').addEventListener('submit', function (event) {
+    event.preventDefault();
 
-    Array.from(forms).forEach(form => {
-        form.addEventListener('submit', event => {
-            if (!form.checkValidity()) {
-                event.preventDefault()
-                event.stopPropagation()
-            }
+    btn.value = 'Enviando...';
 
-            form.classList.add('was-validated')
-        }, false)
-    })
-})()
+    const serviceID = 'default_service';
+    const templateID = 'template_buoty3j';
+
+    emailjs.sendForm(serviceID, templateID, this)
+        .then(() => {
+            btn.value = 'Enviar';
+            Swal.fire(
+                'MAIL',
+                'Enviado correctamente!',
+                'success'
+            )
+        }, (err) => {
+            btn.value = 'Enviar';
+            alert(JSON.stringify(err));
+        });
+});

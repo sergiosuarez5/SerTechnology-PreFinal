@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="FRASE E-COMMERCE">
+    <meta name="description" content="E-COMMERSE">
     <meta name="keywords" content="CEO PONER">
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/3756f86c62.js" crossorigin="anonymous"></script>
@@ -15,6 +15,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="../css/style.css">
     <title>SerTechnology | Sobre nosotros</title>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+    emailjs.init('8ywwX3rFmUrDHJvw9')
+</script>
 </head>
 <body>
     <!-- Encabezado -->
@@ -49,57 +54,17 @@
         <a href="#" class="btn-wsp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
         <h1 class="title animate__animated animate__fadeIn">Contáctanos<i class="fas fa-envelope-open-text"></i></h1>
                 <div class="container animate__animated animate__slideInLeft">
-                    <form class="row g-3 needs-validation" novalidate>
-                        <div class="col-md-4">
-                            <label for="validationCustom01" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="validationCustom01" required>
-                            <div class="valid-feedback">
-                                Aceptado!
+                    <form class="formularioContacto" id="form">
+                        <div class="contenedorContacto">
+                            <div class="conteinerContacto">
+                                <h2 class="titleContacto">¡Puedes consultarnos</h2>
+                                <h2 class="titleContacto">lo que quieras!</h2>
+                                <input type="text" class="inputContacto" name="from_name" id="from_name" placeholder="Nombre">
+                                <input type="text" class="inputContacto" name="to_name" id="to_name" placeholder="Apellido">
+                                <input type="email" class="inputContacto" name="email_id" id="email_id" placeholder="Email">
+                                <input type="text" name="message" id="message" placeholder="Escríbenos un mensaje" class="inputContacto" >
+                                <input type="submit" class="botonContacto" id="button" value="Enviar">
                             </div>
-                            <div class="invalid-feedback">
-                                Debes poner un Nombre
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <label for="validationCustom02" class="form-label">Apellido</label>
-                            <input type="text" class="form-control" id="validationCustom02" required>
-                            <div class="valid-feedback">
-                                Aceptado!
-                            </div>
-                            <div class="invalid-feedback">
-                                Debes poner un Apellido
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <label for="validationCustom03" class="form-label">Ciudad</label>
-                            <input type="text" class="form-control" id="validationCustom03" required>
-                            <div class="invalid-feedback">
-                                Debes poner la Ciudad o Región.
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="invalid-feedback">
-                                Please select a valid state.
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <textarea class="form-control" id="validationCustom04" rows="3"></textarea>
-                            <div class="invalid-feedback">
-                                Debes escribir un mensaje
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                                <label class="form-check-label" for="invalidCheck">
-                                    ¿Deseas recibir nuestras ofertas?
-                                </label>
-
-                                
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <button class="btn btn-light" type="submit">Enviar</button>
                         </div>
                     </form>
                     </div>
@@ -109,7 +74,7 @@
                     <ul>
                         <li><i class="fas fa-map-marker-alt"></i> BA , ARG</li>
                         <li><i class="fas fa-phone"></i> (11) 24068870</li>
-                        <li><i class="fas fa-envelope-open-text"></i> SerTechnology@E-commerce.com</li>
+                        <li><i class="fas fa-envelope-open-text"></i> SerTechnology@E-commerse.com</li>
                     </ul>
                     <p>¡No dudes en consultarnos!</p>
                     <p>Un asesor atenderá tu solicitud.</p>
@@ -127,7 +92,7 @@
                         <img src="../img/logotech.png" alt="" width="100px">
                     </a>
                     <p class="footerInfo">+54 1124068870</p>
-                    <p class="footerInfo">SerTechnology@E-commerce.com</p>
+                    <p class="footerInfo">SerTechnology@E-commerse.com</p>
                 </div>
                 <div class="footerMenu">
                     <div class="footerContenido">
